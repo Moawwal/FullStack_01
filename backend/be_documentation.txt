@@ -1,0 +1,45 @@
+STACK Used: MongoDB, Express.js, Angular.js and Node.js
+Tools used: Postman, MongoDB Atlas, Tailwind, notistack
+
+npm init -y -> On the terminal, To create the package.json 
+in package.json we set type to be module, which allows us to import and export
+npm i express nodemon -> To add express package to folder
+Modify the script on package .json where the project starts from and where its developed
+
+createa file index.js, import express and define a new varible for it
+Make the index.js listen to a port on a new file called config.js where port is defined in
+import the port into index.js file
+Create a function to listen to the port using app.listen(), pass a callbackfunction to app.listen put a message to ensure all good
+then in terminal "npm run dev" to start server on selected port
+
+On index.js use app.get a HTTP method used for a resource from server
+using a callbackfunction in the method to receive "reuest and response" 
+Message should display on port with status code
+
+Sign-in tnto mongoDB and connect it into the nodr.js code we are working on
+Creeate a new variable for it in config.js with the link
+Installed Mongoose using npm i mongoose, then import to our index.js
+
+Created a model folder to hold models, paste the model gotten from mongoose.js
+to a new file in models folder and export it so it can be used in other files. import mongoose
+create book schema variable and make object fields(title, author, publishYear and timestamp)
+
+Import Book Model to index.js, using an app.post() method used to create a new resource and then using request and response
+using a try and catch blocks to validate input and error message when needed
+We use POST display information we add ourselves aand use GET to ost information from DB
+We use PUT to update a resource
+
+Create a Routes folder and put all the CRUD functions there, import express, and create router variable
+import PORT drom config.js, mongoose and bookmodel.js IN INDEX.JS
+use app.use /books to preface all requests so it can be removed on the othe functions
+
+Cross-origin resource sharing (CORS) restricts the abilities of a webpage to make request to a different domain 
+T handle cors error:
+In console type "npm i cors" -> import cors from cors and use as a middleware
+Two ways to acheive that:
+1.Allow all origins with Default of cors(*)
+2.Allow custom Origins 
+######################FrontEnd Chronicles begins
+nmp i axios react-icon -> axios for sending https requests and react icons for icons
+Spinner is when the website is in aloading state while getting page ready
+useState is a Hook that lets you add React state to function components
